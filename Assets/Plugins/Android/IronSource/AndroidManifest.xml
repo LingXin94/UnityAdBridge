@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="preferExternal"
+    package="com.Company.ProductName"
+    android:versionName="1.0"
+    android:versionCode="1">
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
+    
+    <application>
+        <!-- IronSource -->
+        <activity android:name = "com.ironsource.sdk.controller.ControllerActivity"
+        android:configChanges="orientation|screenSize"
+        android:hardwareAccelerated="true"/>
+        <activity android:name = "com.ironsource.sdk.controller.InterstitialActivity"
+        android:configChanges="orientation|screenSize"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.ironsource.sdk.controller.OpenUrlActivity"
+        android:configChanges="orientation|screenSize"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.Translucent" />
+        
+        <!-- Chartboost -->
+        <activity
+        android:name="com.chartboost.sdk.CBImpressionActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:excludeFromRecents="true"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        
+        <!-- AdColony -->
+        <activity
+        android:name="com.adcolony.sdk.AdColonyInterstitialActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:hardwareAccelerated="true" />
+        
+        <!-- Vungle -->
+        <activity
+        android:name="com.vungle.publisher.VideoFullScreenAdActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        
+        <activity
+        android:name="com.vungle.publisher.MraidFullScreenAdActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        
+        <activity
+        android:name="com.vungle.publisher.FlexViewAdActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        
+        <!-- InMobi -->
+        <activity
+            android:name="com.inmobi.ads.rendering.InMobiAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout|locale|fontScale|uiMode"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar"
+            tools:ignore="UnusedAttribute" />
+        
+        <!-- AppLovin -->
+        <activity
+        android:name="com.applovin.adview.AppLovinInterstitialActivity"
+        android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.applovin.sdk.AppLovinWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />        
+        <meta-data
+        android:name="applovin.sdk.verbose_logging"
+        android:value="true" />
+        
+        <!-- UnityAds -->
+        <activity
+        android:name="com.unity3d.services.ads.adunit.AdUnitActivity"
+        android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+        android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity"
+        android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+        android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity"
+        android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+        android:hardwareAccelerated="false"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+        android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity"
+        android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen"
+        android:hardwareAccelerated="false"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        
+        <!-- HyprMX -->
+        <activity
+            android:name="com.ironsource.adapters.hyprmx.MediationHMXActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|keyboard|smallestScreenSize|uiMode|fontScale|screenLayout|locale"></activity>
+        
+        
+        <!-- Facebook -->
+      <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+            <activity
+            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:process=":adnw" />
+            <service
+            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+            android:exported="false" />
+            <service
+            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+            android:exported="false"
+            android:process=":adnw" />
+
+ 
+
+        
+        <!-- TapJoy -->
+        <activity
+        android:name="com.tapjoy.TJAdUnitActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+        android:name="com.tapjoy.mraid.view.ActionHandler"
+        android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+        android:name="com.tapjoy.mraid.view.Browser"
+        android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+        android:name="com.tapjoy.TJContentActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:hardwareAccelerated="true" />
+        
+        <!-- MediaBrix -->
+        <activity
+            android:name="com.mediabrix.android.service.AdViewActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mediabrix.android.service.ClickOutActivity"
+            android:configChanges="orientation|screenSize|keyboard"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <service
+            android:name="com.mediabrix.android.service.MediaBrixService" >
+        </service>
+        
+        <!-- AdMob -->
+
+                <activity
+        android:name="com.google.android.gms.ads.AdActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+        android:theme="@android:style/Theme.Translucent" />
+        
+      <!--As Requiered By Admob please add your App ID-->
+
+        <!--<meta-data-->
+            <!--android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+            <!--android:value="YOUR_ADMOB_APP_ID"/>-->
+        
+        <!-- MoPub -->
+        <activity
+        android:name="com.mopub.mobileads.MoPubActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+        android:name="com.mopub.mobileads.MraidActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+        android:name="com.mopub.common.MoPubBrowser"
+        android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+        android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize" />
+        
+        <!-- Maio -->
+        
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity
+            android:name="jp.maio.sdk.android.AdFullscreenActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="jp.maio.sdk.android.HtmlBasedAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+         <!-- amazon -->
+        <activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+    	<!-- MyTarget -->
+        <activity
+            android:name="com.my.target.common.MyTargetActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+       
+    </application>
+</manifest>

@@ -1,0 +1,20 @@
+<dependencies>
+  <androidPackages>
+    <androidPackage spec="com.android.support:support-v4:27.1.1"/>
+    <androidPackage spec="com.mintegral.msdk:videojs:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:mtgjscommon:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:playercommon:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:reward:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:videocommon:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:optimizedata:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:common:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:alphab:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:interstitialvideo:10.2.41"/>
+    <androidPackage spec="com.mintegral.msdk:mtgdownloads:10.2.41"/>
+  </androidPackages>
+  <iosPods>
+    <iosPod name="MTGSDK.framework" minTargetSdk="8.0"/>
+    <iosPod name="MTGSDKReward.framework" minTargetSdk="8.0"/>
+    <iosPod name="MTGSDKInterstitialVideo.framework" minTargetSdk="8.0"/>
+  </iosPods>
+</dependencies>
