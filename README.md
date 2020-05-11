@@ -1,4 +1,6 @@
-﻿# 目的
+@[TOC](Unity广告桥接设计)
+
+# 目的
 我是做游戏开发的，我们的游戏主要使用广告进行变现。由于公司节奏快，项目多，需求变化快，所以需要写一个广告桥接设计，来将广告逻辑与游戏逻辑分离，减少游戏逻辑与广告sdk模块的耦合。
 # 应用局限
 此桥接设计适用于游戏内同时只接入一个广告平台（或者只有一个聚合平台）。若游戏需要同时接入多个广告平台，则此桥接无法胜任，需要进一步扩展。
@@ -6,16 +8,10 @@
 文末demo工程已实现了桥接广告平台有：Mopub聚合，IronSource聚合，穿山甲，Mintegral。demo工程无法直接运行，若有需要请正常接入各广告平台，然后复制ADBridge目录下需要的代码进行测试。
 
 # 设计原则
-**设计模式六大原则**
-+ 单一职责原则SRP(Single Responsibility Principle)
-+ 开闭原则OCP(Open-Closed Principle)
-+ 里氏替换原则LSP(Liskov Substitution Principle)
 + 依赖倒置原则DIP(Dependency Inversion Principle)
-+ 接口隔离原则ISP(Interface Segregation Principle)
-+ 迪米特法则LoD(Law of Demeter)
 
-以六大原则为中心思想，针对接口编程，分离广告逻辑与游戏逻辑。降低耦合度，提高代码复用性。
-当然此六大原则写在这里主要是提醒自己要保持谦虚，时刻注意编码规范、设计规范。
+面向口编程，分离广告逻辑与游戏逻辑。降低耦合度，提高代码复用性。
+
 # 总体设计
 ```mermaid
 graph TD;
